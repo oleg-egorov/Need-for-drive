@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a6dffc32420cb57ed78e44df9eb03a2c",
+    "revision": "6d6e3a8631c2a169532e32a8da9903bf",
     "url": "/Need-for-drive/index.html"
   },
   {
-    "revision": "7817d0dc0b06ca27f31b",
+    "revision": "8090bf792e46f1ab7b34",
     "url": "/Need-for-drive/static/css/main.da92d992.chunk.css"
   },
   {
-    "revision": "1a156168eff1ae3b4072",
-    "url": "/Need-for-drive/static/js/2.c9f029a6.chunk.js"
+    "revision": "238ed71c07139b81d5a1",
+    "url": "/Need-for-drive/static/js/2.11efd13e.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/Need-for-drive/static/js/2.c9f029a6.chunk.js.LICENSE.txt"
+    "url": "/Need-for-drive/static/js/2.11efd13e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7817d0dc0b06ca27f31b",
-    "url": "/Need-for-drive/static/js/main.98b53745.chunk.js"
+    "revision": "8090bf792e46f1ab7b34",
+    "url": "/Need-for-drive/static/js/main.34cdbf0c.chunk.js"
   },
   {
     "revision": "a083fbd5d459759fd6dc",
@@ -40,16 +40,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Need-for-drive/static/media/4.82423b3f.jpg"
   },
   {
-    "revision": "8e41c06a136a26974f9fd30e7694d5fa",
-    "url": "/Need-for-drive/static/media/Facebook.8e41c06a.svg"
+    "revision": "68c1b5acba24731b10ceaa8bfda70735",
+    "url": "/Need-for-drive/static/media/Facebook.68c1b5ac.svg"
   },
   {
-    "revision": "bfb46bc62ee87606aa9bbf0f05990ff0",
-    "url": "/Need-for-drive/static/media/Instagram.bfb46bc6.svg"
+    "revision": "d1ea1cb11dda57667126a6f73b43bb55",
+    "url": "/Need-for-drive/static/media/Instagram.d1ea1cb1.svg"
   },
   {
-    "revision": "a2af95740e7ba052b2a9caa3c6f042da",
-    "url": "/Need-for-drive/static/media/Telegram.a2af9574.svg"
+    "revision": "c4faeaa1fd75b42c47c17042bf3a0aa1",
+    "url": "/Need-for-drive/static/media/Telegram.c4faeaa1.svg"
   },
   {
     "revision": "1267430ed27cb97f49fc2fa614fdb933",
