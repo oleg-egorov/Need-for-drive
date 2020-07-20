@@ -1,43 +1,46 @@
 .Header {
     display: flex;
     height: 40px;
-    margin-bottom: 30px;
     padding: 30px 60px;
     align-items: center;
     justify-content: space-between;
 
-    @media screen and (max-width: 900px) {
-        padding: 20px 20px;
-    }
+    // @media screen and (max-width: 900px) {
+    //     padding: 20px 20px;
+    // }
 
-    @media screen and (max-device-width: 723px) {
-        flex-direction: column;
-        align-items: flex-end;
-        height: 10%;
-        justify-content: space-evenly;
-    }
+    // @media screen and (max-device-width: 723px) {
+    //     flex-direction: column;
+    //     align-items: flex-end;
+    //     height: 10%;
+    //     justify-content: space-evenly;
+    // }
 
     &__Logo {
         font-weight: bold;
         font-size: 30px;
 
-        @media screen and (max-device-width: 723px) {
-            font-size: 70px;
-        }
+        // @media screen and (max-device-width: 723px) {
+        //     font-size: 70px;
+        // }
     }
 
     &__Map {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
 
     &__City {
+        margin-left: 5px;
         font-weight: normal;
         font-size: 14px;
         color: #999999;
 
-        @media screen and (max-device-width: 723px) {
-            font-size: 34px;
-        }
+        // @media screen and (max-device-width: 723px) {
+        //     font-size: 34px;
+        // }
     }
 }
 

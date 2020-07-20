@@ -1,16 +1,16 @@
 import React from 'react';
 
-import './style.scss'
+import './style.scss';
 import Header from '../Header';
-import Footer from '../Footer';
-import HeroBlock from '../HeroBlock';
+import OrderPage from '../OrderPage';
+import PagesPanel from '../PagesPanel';
 
 const Content = () => {
     return (
         <div className='Content'>
             <Header />
-            <HeroBlock />
-            <Footer />
+            <PagesPanel />
+            <OrderPage />
         </div>
     );
 };
