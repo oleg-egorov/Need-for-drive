@@ -70,23 +70,25 @@ export default class Slider extends Component {
 
         return (
             <div className='Slider' style={{backgroundImage: `url(${slider[index].image})`}}>
+               
+               <div className='Control' onClick={this.clickControleLeft}>
+                    <img src={require('./image/left.svg')} alt='left'/>
+                </div>
+               
                 <div className='Slider__Content'>
-                    <span className='Slider__Title'> {slider[index].title} </span>
-                    <span className='Slider__Description'> {slider[index].description} </span>
-                    <button type='button' className='Slider__Button ColorButton' 
-                            style={{background: `${slider[index].button}`}}>Подробнее</button>
-                </div>
-                <div className='Slider__Panel'>
-                    {slider ? <SliderPanel items={slider} index={index}/> : null}
-                </div>
-                
-                <div className='Controls__Panel'>
-                    <div className='Control Control_Left' onClick={this.clickControleLeft}>
-                        <img src={require('./image/left.svg')} alt='left'/>
+                    <div className='Slider__Items'>
+                        <span className='Slider__Title'> {slider[index].title} </span>
+                        <span className='Slider__Description'> {slider[index].description} </span>
+                        <button type='button' className='Slider__Button ColorButton' 
+                                style={{background: `${slider[index].button}`}}>Подробнее</button>
                     </div>
-                    <div className='Control Control_Right' onClick={this.clickControleRight}>
-                        <img src={require('./image/right.svg')} alt='right'/>
+                    <div className='Slider__Panel'>
+                        {slider ? <SliderPanel items={slider} index={index}/> : null}
                     </div>
+                </div>
+
+                <div className='Control' onClick={this.clickControleRight}>
+                    <img src={require('./image/right.svg')} alt='right'/>
                 </div>
             </div>
         );

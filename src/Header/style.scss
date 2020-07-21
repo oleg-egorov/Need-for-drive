@@ -6,11 +6,11 @@
     align-items: center;
     justify-content: space-between;
 
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 1023px) {
         padding: 20px 20px;
     }
 
-    @media screen and (max-device-width: 723px) {
+    @media screen and (max-device-width: 767px) {
         flex-direction: column;
         align-items: flex-end;
         height: 10%;
@@ -18,24 +18,35 @@
     }
 
     &__Logo {
-        font-weight: bold;
+        font-family: Roboto_Bold;
         font-size: 30px;
 
-        @media screen and (max-device-width: 723px) {
+        @media screen and (max-device-width: 767px) {
             font-size: 70px;
         }
     }
 
     &__Map {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__Icon {
+        height: 18px;
+
+        @media screen and (max-device-width: 767px) {
+            height: 40px;
+        }
     }
 
 
     &__City {
-        font-weight: normal;
         font-size: 14px;
         color: #999999;
+        margin-left: 10px;
 
-        @media screen and (max-device-width: 723px) {
+        @media screen and (max-device-width: 767px) {
             font-size: 34px;
         }
     }

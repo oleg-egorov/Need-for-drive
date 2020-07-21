@@ -76,6 +76,8 @@ export default class Navigation extends Component {
                         <InstagramIcon />
                     </div>
                 </div>
+                
+                <div className='Navigation__Shadow'/>
             </div>
         );
     };
