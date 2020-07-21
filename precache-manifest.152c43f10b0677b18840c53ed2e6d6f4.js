@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6d6e3a8631c2a169532e32a8da9903bf",
+    "revision": "63c7085a3f81a5c46aad93e11fb8abfe",
     "url": "/Need-for-drive/index.html"
   },
   {
-    "revision": "8090bf792e46f1ab7b34",
-    "url": "/Need-for-drive/static/css/main.da92d992.chunk.css"
+    "revision": "569817e6feb134b16ba6",
+    "url": "/Need-for-drive/static/css/main.1669d29a.chunk.css"
   },
   {
     "revision": "238ed71c07139b81d5a1",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Need-for-drive/static/js/2.11efd13e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8090bf792e46f1ab7b34",
-    "url": "/Need-for-drive/static/js/main.34cdbf0c.chunk.js"
+    "revision": "569817e6feb134b16ba6",
+    "url": "/Need-for-drive/static/js/main.26fa4716.chunk.js"
   },
   {
     "revision": "a083fbd5d459759fd6dc",
@@ -48,15 +48,31 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Need-for-drive/static/media/Instagram.d1ea1cb1.svg"
   },
   {
+    "revision": "e07df86cef2e721115583d61d1fb68a6",
+    "url": "/Need-for-drive/static/media/Roboto-Bold.e07df86c.ttf"
+  },
+  {
+    "revision": "88823c2015ffd5fa89d567e17297a137",
+    "url": "/Need-for-drive/static/media/Roboto-Light.88823c20.ttf"
+  },
+  {
+    "revision": "11eabca2251325cfc5589c9c6fb57b46",
+    "url": "/Need-for-drive/static/media/Roboto-Regular.11eabca2.ttf"
+  },
+  {
     "revision": "c4faeaa1fd75b42c47c17042bf3a0aa1",
     "url": "/Need-for-drive/static/media/Telegram.c4faeaa1.svg"
   },
   {
-    "revision": "1267430ed27cb97f49fc2fa614fdb933",
-    "url": "/Need-for-drive/static/media/left.1267430e.svg"
+    "revision": "3a9e700ad9bf55a8926c506600e9f220",
+    "url": "/Need-for-drive/static/media/left.3a9e700a.svg"
   },
   {
-    "revision": "f9a6dc71f6e7548b73de3aded5828732",
-    "url": "/Need-for-drive/static/media/right.f9a6dc71.svg"
+    "revision": "ad875966f16f368752f03cc585484597",
+    "url": "/Need-for-drive/static/media/point.ad875966.svg"
+  },
+  {
+    "revision": "bf9a1d595ffc3d771daf921ee24f4528",
+    "url": "/Need-for-drive/static/media/right.bf9a1d59.svg"
   }
 ]);
