@@ -1,0 +1,41 @@
+.CarList {
+    &__Car {
+        display: inline-flex;
+        width: 49%;
+        height: 224px;
+        border: 1px solid #EEEEEE;
+        transition: .3s;
+        flex-direction: column;
+        overflow: hidden;
+        justify-content: space-around;
+
+        &:hover {
+            border: 1px solid #999999;
+        }
+
+        &.active {
+            border: 1px solid #0EC261;
+        }
+    }
+
+    &__Description {
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__Mark {
+        font-size: 18px;
+    }
+
+    &__Price {
+        font-size: 14px;
+        color: #999999;
+    }
+
+    &__Image {
+        width: 256px;
+        height: 116px;
+        margin-left: auto;
+    }
+}
