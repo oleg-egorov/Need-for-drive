@@ -1,0 +1,42 @@
+.AddPanel {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+
+    &__Label {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    &__Check {
+        display: none;
+    }
+
+    &__Fake {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border: 1px solid #999999;
+        border-radius: 20%;
+        margin-right: 5px;
+    }
+
+    &__Fake::before {
+        position: relative;
+        content: '';
+        display: block;
+        width: 13px;
+        height: 10px;
+        background-image: url('./done.svg');
+        opacity: 0;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: .2s;
+    }
+
+    &__Check:checked + &__Fake::before {
+        opacity: 1;
+    }
+}

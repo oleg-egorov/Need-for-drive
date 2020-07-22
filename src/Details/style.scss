@@ -1,0 +1,77 @@
+.Details {
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    padding: 30px 65px;
+
+    &__Color { 
+        flex-direction: column;
+        display: flex;
+        margin-bottom: 40px;
+
+        &Text {
+            margin-bottom: 15px;
+        }
+    }
+
+    &__Items {
+        display: flex;
+        margin-top: 15px;
+    }
+
+    &__DateText {
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+
+        &_Header {
+            margin-bottom: 35px;
+        }
+
+        span {
+            margin-bottom: 15px;
+            height: 20px;
+        }
+    }
+
+    &__Tariff {
+        display: flex;
+        flex-direction: column;
+
+        &_Text {
+            margin: 30px 0 15px 0;
+        }
+    }
+
+    &__AddServices {
+        display: flex;
+        flex-direction: column;
+
+        &_Text {
+            margin: 30px 0 15px 0;
+        }
+    }
+
+    &__Choose {
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__Input {
+        height: 19px;
+        width: 180px;
+        margin-left: 10px;
+        border-bottom: 1px solid #999999;
+        margin-bottom: 15px;
+
+        input {
+            outline: none;
+            border: none;
+            font-family: Roboto_Thin;
+            font-size: 14px;
+        }
+
+        input::-moz-placeholder { color: #999999; }
+        input::-webkit-input-placeholder { color: #999999; }
+    }
+}

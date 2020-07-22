@@ -1,0 +1,30 @@
+.Header {
+    display: flex;
+    height: 7%;
+    padding: 30px 60px;
+    align-items: center;
+    justify-content: space-between;
+
+    &__Logo {
+        margin-left: 5px;
+        font-family: Roboto_Bold;
+        font-size: 30px;
+    }
+
+    &__Map {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    &__City {
+        margin-left: 5px;
+        font-size: 14px;
+        color: #999999;
+    }
+}
+
+.MainAccent {
+    color: #0EC261;
+}
