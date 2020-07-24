@@ -54,7 +54,6 @@
     &__Circle {
         padding: 1px 1px;
         margin-bottom: 10px;
-        background-color: white;
         border-radius: 100%;
         width: 33px;
         height: 33px;
@@ -62,6 +61,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        transition: .2s;
+
+        &:hover {
+            background-color: white;
+        }
 
         @media screen and (max-device-width: 767px) {
             display: none;
@@ -79,7 +83,7 @@
         justify-content: center;
         align-items: center;
 
-        &:hover {
+        &:active {
             span {
                 color: green
             }

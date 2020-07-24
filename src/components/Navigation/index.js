@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import HamburgerMenu from 'react-hamburger-menu/dist/HamburgerMenu';
-import {ReactComponent as FacebookIcon} from './image/Facebook.svg';
-import {ReactComponent as TelegramIcon} from './image/Telegram.svg';
-import {ReactComponent as InstagramIcon} from './image/Instagram.svg';
+import {ReactComponent as FacebookIcon} from '../../assets/icon/Facebook.svg';
+import {ReactComponent as TelegramIcon} from '../../assets/icon/Telegram.svg';
+import {ReactComponent as InstagramIcon} from '../../assets/icon/Instagram.svg';
 
 import './style.scss';
 

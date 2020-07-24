@@ -72,7 +72,7 @@ export default class Slider extends Component {
             <div className='Slider' style={{backgroundImage: `url(${slider[index].image})`}}>
                
                <div className='Control' onClick={this.clickControleLeft}>
-                    <img src={require('./image/left.svg')} alt='left'/>
+                    <img src={require('../../assets/icon//left.svg')} alt='left'/>
                 </div>
                
                 <div className='Slider__Content'>
@@ -88,7 +88,7 @@ export default class Slider extends Component {
                 </div>
 
                 <div className='Control' onClick={this.clickControleRight}>
-                    <img src={require('./image/right.svg')} alt='right'/>
+                    <img src={require('../../assets/icon//right.svg')} alt='right'/>
                 </div>
             </div>
         );

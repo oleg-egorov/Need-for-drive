@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {ReactComponent as Point} from './image/point.svg';
+import {ReactComponent as Point} from '../../assets/icon//point.svg';
 import './style.scss';
 
 const Header = () => {
