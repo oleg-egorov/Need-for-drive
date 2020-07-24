@@ -1,0 +1,19 @@
+.PagesPanel {
+    border: 1px solid #EEEEEE;
+    border-left: none;
+    border-right: none;
+    padding: 10px 50px;
+
+    span {
+        margin: 0 15px;
+        color: darkgray;
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: bold;
+        cursor: pointer;
+
+        &:first-child {
+            color: #0EC261;
+        }
+    }
+}
