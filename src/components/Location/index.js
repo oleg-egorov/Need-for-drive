@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {ReactComponent as Cross} from './cross.svg';
+import {ReactComponent as Cross} from '../../assets/icon/cross.svg';
 import './style.scss';
 
 const Location = () => {
@@ -26,7 +26,7 @@ const Location = () => {
 
             <div className='Location__Map'>
                 <span>Выбор на карте:</span>
-                <img className='Location__Img' src={require('./screen.png')} />
+                <img className='Location__Img' src={require('../../assets/image/screen.png')} alt='map'/>
             </div>
         </div>
     );
