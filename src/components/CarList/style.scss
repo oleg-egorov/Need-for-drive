@@ -16,6 +16,11 @@
         &.active {
             border: 1px solid #0EC261;
         }
+
+        @media (max-device-width: 767px) {
+            width: 98%;
+            height: 400px;
+        }
     }
 
     &__Description {
@@ -26,16 +31,29 @@
 
     &__Mark {
         font-size: 18px;
+
+        @media (max-device-width: 767px) {
+            font-size: 48px;
+        }
     }
 
     &__Price {
         font-size: 14px;
         color: #999999;
+
+        @media (max-device-width: 767px) {
+            font-size: 36px;
+        }
     }
 
     &__Image {
         width: 256px;
         height: 116px;
         margin-left: auto;
+
+        @media (max-device-width: 767px) {
+            width: 470px;
+            height: 216px;
+        }
     }
 }

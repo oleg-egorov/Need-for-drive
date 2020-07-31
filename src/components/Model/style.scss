@@ -4,4 +4,9 @@
     width: 70%;
     padding: 30px 50px;
     overflow-y: auto;
+
+    @media (max-device-width: 767px) {
+        width: auto;
+        height: 70%;
+    }
 }

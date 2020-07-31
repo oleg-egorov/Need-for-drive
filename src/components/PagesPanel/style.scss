@@ -5,6 +5,18 @@
     padding: 10px 50px;
     height: 3%;
 
+    @media screen and (max-width: 1023px) {
+        padding: 10px 5px;
+    }
+
+    @media (max-device-width: 767px) {
+        height: 5%;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     &__Text {
         margin: 0 15px;
         color: darkgray;
@@ -19,6 +31,10 @@
 
         &.passed {
             color: black;
+        }
+
+        @media (max-device-width: 767px) {
+            font-size: 28px;
         }
     }
 }

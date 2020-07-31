@@ -33,6 +33,16 @@
             border-radius: 100%;
             margin: 5px;
             transition: .1s;
+
+            @media (max-device-width: 767px) {
+                width: 30px;
+                height: 30px;
+                margin: 15px;
+            }
+        }
+
+        @media (max-device-width: 767px) {
+            font-size: 34px;
         }
     }
 
@@ -41,5 +51,18 @@
         margin: 5px;
         width: 6px;
         height: 6px;
+
+        @media (max-device-width: 767px) {
+            border: 8px solid #0EC261;
+            width: 16px;
+            height: 16px;
+            margin: 15px;
+        }
+    }
+
+    @media (max-device-width: 767px) {
+        height: auto;
+        justify-content: center;
+        align-items: center;
     }
 }
