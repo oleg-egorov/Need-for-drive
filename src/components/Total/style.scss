@@ -1,0 +1,109 @@
+.Total {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    padding: 30px 65px;
+
+    &__Description {
+        display: flex;
+        flex-direction: column;
+
+        @media (max-device-width: 767px) {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__Items {
+        margin-bottom: 10px;
+
+        span:first-child {
+            font-family: Roboto_Bold;
+            margin-right: 10px;
+        }
+    }
+
+    &__Number {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin: 10px 0;
+        width: 100px;
+        height: 25px;
+        font-size: 14px;
+        border: 1px solid gray;
+        border-radius: 5px;
+
+        @media (max-device-width: 767px) {
+            width: 250px;
+            height: 70px;
+        }
+    }
+
+    img {        
+        width: 256px;
+        height: 116px;
+    }
+
+    @media (max-device-width: 767px) {
+        width: auto;
+        height: 85%;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+
+        span {
+            font-size: 38px;
+        }
+
+        img {
+            width: 600px;
+            height: 280px;
+        }
+    }
+
+    &__Order {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.8);
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+    }
+
+    &__Button {
+        margin: 10px;
+        width: 200px;
+        height: 50px;
+        border: none;
+        border-radius: 10px;
+
+        font-family: Roboto_Bold;
+        font-size: 18px;
+        color:  white;
+        cursor: pointer;
+        outline: none;
+
+        &:hover {
+            filter: brightness(0.9);
+        }
+
+        &:active {
+            filter: brightness(0.8);
+        }
+
+        &_Yes {
+            background: linear-gradient(90deg, #0EC261 2.61%, #039F67 112.6%);
+        }
+
+        &_No {
+            background: linear-gradient(90deg, #493013 0%, #7B0C3B 100%);
+        }
+    }
+}

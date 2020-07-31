@@ -1,0 +1,159 @@
+.Navigation {
+    position: absolute;
+    display: flex;
+    width: 55px;
+    height: 100%;
+    background: #151B1F;
+    transition: ease-in-out 750ms;   
+    z-index: 1;
+
+    @media screen and (max-device-width: 767px) {
+        background: none;
+        &__HamburgerMenu {
+            span {
+                width:50px !important;
+                background: rgb(0, 0, 0) !important;
+            }
+        }
+    }
+
+
+    &.open {
+        width: 100%;
+
+        @media screen and (max-device-width: 767px) {
+            width: 100%;
+            background: #151B1F;
+            .Navigation__HamburgerMenu {
+                span {
+                    background: rgb(255, 255, 255) !important;
+                }
+            }
+        }
+    }
+
+    &__Items {
+        display: flex;
+        padding: 10px;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    &__Hamburger {
+        margin-top: 10px;
+        cursor: pointer;
+    }
+
+    &__Circle {
+        padding: 1px 1px;
+        margin-bottom: 10px;
+        border-radius: 100%;
+        width: 33px;
+        height: 33px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .2s;
+
+        @media screen and (max-device-width: 767px) {
+            display: none;
+        }
+
+        &:hover {
+            background-color: white;
+        }
+    }
+
+    &__Lang {
+        background-color: #151B1F;
+        border-radius: 100%;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:active {
+            span {
+                color: green
+            }
+        }
+
+        span {
+            color: white;
+            font-family: Roboto_Bold;
+            font-size: 12px;
+            transition: color 150ms;
+        }
+    }
+
+    &__Menu {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        transition: ease-in-out 750ms;
+        right: 340px;
+
+        &.open {       
+            padding: 50px;
+            right: 0px;
+
+            @media screen and (max-device-width: 767px) {
+                background: none;
+            }
+        }
+    }
+
+    &__Text {
+        position: relative;
+        margin: 10px;
+        cursor: pointer;
+
+        color: white;
+        font-size: 32px;
+        line-height: 37px;
+
+        opacity: 0;
+        transition: ease-in-out 750ms, color 200ms;
+
+        @media screen and (max-device-width: 767px) {
+            margin: 30px;
+            font-size: 30px;
+            font-family: Roboto_Bold;
+        }
+
+        &.open {
+            opacity: 1;
+        }
+
+        &:hover {
+            color: green
+        }
+    }
+    
+
+    &__Icons {
+        svg {
+            margin: 10px;
+            width: 40px;
+            cursor: pointer;
+            fill: white;
+            transition: 200ms;
+
+            @media screen and (max-device-width: 767px) {
+                width: 60px;
+                margin: 20px;
+            }
+
+            &:hover {
+                fill: green;
+            }
+        }
+    }
+}

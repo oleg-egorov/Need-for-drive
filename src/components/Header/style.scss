@@ -1,0 +1,57 @@
+.Header {
+    display: flex;
+    height: 40px;
+    margin-bottom: 30px;
+    padding: 30px 60px;
+    align-items: center;
+    justify-content: space-between;
+
+    @media screen and (max-width: 1023px) {
+        padding: 20px 20px;
+    }
+
+    @media screen and (max-device-width: 767px) {
+        flex-direction: column;
+        align-items: flex-end;
+        height: 10%;
+        justify-content: space-evenly;
+    }
+
+    &__Logo {
+        font-family: Roboto_Bold;
+        font-size: 30px;
+
+        @media screen and (max-device-width: 767px) {
+            font-size: 70px;
+        }
+    }
+
+    &__Map {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__Icon {
+        height: 18px;
+
+        @media screen and (max-device-width: 767px) {
+            height: 40px;
+        }
+    }
+
+
+    &__City {
+        font-size: 14px;
+        color: #999999;
+        margin-left: 10px;
+
+        @media screen and (max-device-width: 767px) {
+            font-size: 34px;
+        }
+    }
+}
+
+.MainAccent {
+    color: #0EC261;
+}
