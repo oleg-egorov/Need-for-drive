@@ -6,11 +6,25 @@
     border: 1px solid #EEEEEE;
     border-top: none;
 
+    @media screen and (max-width: 1023px) {
+        padding: 10px 10px;
+    }
+
+    @media (max-device-width: 767px) {
+        width: auto;
+        height: 30%;
+        border-top: 1px solid #EEEEEE;
+    }
+
     &__Header, &__Price {
-        font-weight: 600;
+        font-family: Roboto_Bold;
         font-size: 18px;
         line-height: 21px;
         margin: 20px 0;
+
+        @media (max-device-width: 767px) {
+            font-size: 40px;
+        }
     }
 
     &__Header {
@@ -18,12 +32,11 @@
     }
 
     &__Button {
-        margin-top: 40px;
         width: 100%;
         height: 48px;
 
         font-size: 18px;
-        font-weight: 700;
+        font-family: Roboto_Bold;
 
         color: white;
         cursor: pointer;
@@ -31,10 +44,27 @@
         border: none;
         border-radius: 4px;
         transition: 150ms;
-        user-select: none;
+        
+        background: linear-gradient(90deg, #0EC261 2.61%, #039F67 112.6%);
 
         &:active {
             opacity: 0.8;
+        }
+
+        @media (max-device-width: 767px) {
+            margin-top: 30px;
+            width: 100%;
+            font-size: 40px;
+            height: 100px;
+            border-radius: 20px;
+        }
+    }
+
+    &__Text {
+        @media (max-device-width: 767px) {
+            margin-left: 50px;
+            font-size: 30px;
+            font-family: Roboto_Thin;
         }
     }
 

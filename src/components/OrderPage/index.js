@@ -2,12 +2,12 @@ import React from 'react';
 
 import './style.scss'
 import OrderPanel from '../OrderPanel';
-import Location from '../Location';
+import Details from '../Details';
 
 const OrderPage = () => {
     return (
         <div className='OrderPage'>
-            <Location />
+            <Details />
             <OrderPanel />
         </div>
     );

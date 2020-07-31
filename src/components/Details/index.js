@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './style.scss';
-import {ReactComponent as Cross} from './cross.svg';
+import {ReactComponent as Cross} from '../../assets/icon/cross.svg';
 import ColorPanel from '../ColorPanel';
 import TariffPanel from '../TariffPanel';
 import AddPanel from '../AddPanel';

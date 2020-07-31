@@ -5,40 +5,32 @@
     height: 100%;
     background: #151B1F;
     transition: ease-in-out 750ms;   
-    
+    z-index: 1;
     
 
-    // @media screen and (max-device-width: 723px) {
-    //     background: none;
-    //     &__HamburgerMenu {
-    //         span {
-    //             width:50px !important;
-    //             background: rgb(0, 0, 0) !important;
-    //         }
-    //     }
-    // }
+    @media screen and (max-device-width: 767px) {
+        background: none;
+        &__HamburgerMenu {
+            span {
+                width:50px !important;
+                background: rgb(0, 0, 0) !important;
+            }
+        }
+    }
 
 
     &.open {
-        width: 100vw;
+        width: 100%;
 
-        // @media screen and (max-width: 900px) {
-        //     width: 505px;
-        // }
-
-        // @media screen and (max-width: 723px) {
-        //     width: 100%;
-        // }
-
-        // @media screen and (max-device-width: 723px) {
-        //     width: 100%;
-        //     background: #151B1F;
-        //     .Navigation__HamburgerMenu {
-        //         span {
-        //             background: rgb(255, 255, 255) !important;
-        //         }
-        //     }
-        // }
+        @media screen and (max-device-width: 767px) {
+            width: 100%;
+            background: #151B1F;
+            .Navigation__HamburgerMenu {
+                span {
+                    background: rgb(255, 255, 255) !important;
+                }
+            }
+        }
     }
 
     &__Items {
@@ -57,7 +49,6 @@
     &__Circle {
         padding: 1px 1px;
         margin-bottom: 10px;
-        background-color: white;
         border-radius: 100%;
         width: 33px;
         height: 33px;
@@ -65,10 +56,15 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        transition: .2s;
 
-        // @media screen and (max-device-width: 723px) {
-        //     display: none;
-        // }
+        @media screen and (max-device-width: 767px) {
+            display: none;
+        }
+
+        &:hover {
+            background-color: white;
+        }
     }
 
     &__Lang {
@@ -82,7 +78,7 @@
         justify-content: center;
         align-items: center;
 
-        &:hover {
+        &:active {
             span {
                 color: green
             }
@@ -90,8 +86,8 @@
 
         span {
             color: white;
+            font-family: Roboto_Bold;
             font-size: 12px;
-            font-weight: 500;
             transition: color 150ms;
         }
     }
@@ -105,58 +101,43 @@
         transition: ease-in-out 750ms;
         right: 340px;
 
-        // @media screen and (max-width: 723px) {
-        //     right: 410px;
-        // }
-
         &.open {       
             padding: 50px;
             right: 0px;
 
-            // @media screen and (max-width: 900px) {
-            //     padding: 10px;
-            // }
-
-            // @media screen and (max-device-width: 723px) {
-            //     background: none;
-            // }
-        }
-
-        span {
-            position: relative;
-            margin: 10px;
-            cursor: pointer;
-
-            color: white;
-            font-weight: 500;
-            font-size: 32px;
-            line-height: 37px;
-
-            opacity: 0;
-            transition: ease-in-out 750ms, color 200ms;
-
-            // @media screen and (max-width: 723px) {
-            //     font-weight: 700;
-            //     font-size: 40px;
-            // }
-
-            &.open {
-                opacity: 1;
-            }
-
-            &:hover {
-                color: green
+            @media screen and (max-device-width: 767px) {
+                background: none;
             }
         }
-    }    
+    }
 
-    // &__Text.open {
-    //     @media screen and (max-device-width: 723px) {
-    //         font-weight: 700;
-    //         font-size: 54px;
-    //         margin: 20px;
-    //     }
-    // }
+    &__Text {
+        position: relative;
+        margin: 10px;
+        cursor: pointer;
+
+        color: white;
+        font-size: 32px;
+        line-height: 37px;
+
+        opacity: 0;
+        transition: ease-in-out 750ms, color 200ms;
+
+        @media screen and (max-device-width: 767px) {
+            margin: 30px;
+            font-size: 30px;
+            font-family: Roboto_Bold;
+        }
+
+        &.open {
+            opacity: 1;
+        }
+
+        &:hover {
+            color: green
+        }
+    }
+    
 
     &__Icons {
         svg {
@@ -166,10 +147,10 @@
             fill: white;
             transition: 200ms;
 
-            // @media screen and (max-device-width: 723px) {
-            //     width: 60px;
-            //     margin: 20px;
-            // }
+            @media screen and (max-device-width: 767px) {
+                width: 60px;
+                margin: 20px;
+            }
 
             &:hover {
                 fill: green;
